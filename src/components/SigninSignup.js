@@ -39,7 +39,7 @@ function SignInSignupWithLocalStorage(){
    
    }
    const handleSignIn=()=>{
-    if(email.current.value==localEmail&&password.current.value==localPassword){
+    if(email.current.value===localEmail&&password.current.value===localPassword){
         localStorage.setItem("signUp",email.current.value)
         window.location.reload()
     }else{
